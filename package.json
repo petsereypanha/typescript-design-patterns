@@ -16,6 +16,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
   "dependencies": {
+    "@types/lodash": "^4.17.20",
     "core-js": "^3.37.0",
     "tslib": "^2.6.2"
   },
