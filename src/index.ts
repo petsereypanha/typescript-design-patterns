@@ -7,6 +7,7 @@ import {Box, ExtendedUser} from "./basic/types";
 import {Calulator} from "./basic/Decorators";
 import {calculateArea} from "./basic/Javascript-vs-typescript";
 import {findUserByName} from "./basic/Refactoring";
+import {SSHUser} from "./basic/Visibility";
 
 export function main() {
     console.log("Basic TypeScript Example");
@@ -41,6 +42,9 @@ export function main() {
     console.log(`Area2: ${area2}`); // Output: Area2:
     // refactoring
     console.log(findUserByName([{ name: "John" }, { name: "Doe" }], "John"));
+    // SSH
+    const ssh = new SSHUser("private", "public")
+    console.log(ssh.getBase64()) // Outputs the base64 encoded public key
 }
 
 main();

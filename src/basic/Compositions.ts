@@ -27,3 +27,8 @@ class House {
         return this.rooms
     }
 }
+
+export {
+    Room,
+    House
+}
