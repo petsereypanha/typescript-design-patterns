@@ -5,6 +5,8 @@ import {Permission,grantPermission,Color,Direction} from "./basic/enum";
 import {Dog, User} from "./basic/Classes";
 import {Box, ExtendedUser} from "./basic/types";
 import {Calulator} from "./basic/Decorators";
+import {calculateArea} from "./basic/Javascript-vs-typescript";
+import {findUserByName} from "./basic/Refactoring";
 
 export function main() {
     console.log("Basic TypeScript Example");
@@ -32,6 +34,13 @@ export function main() {
     const numberBox: Box<number> = { content: 42 };
     // Decorator example
     new Calulator().add(1,2)
+    // JavaScript vs TypeScript
+    const area1 = calculateArea(5, 10);
+    const area2 = calculateArea("20", "10");
+    console.log(`Area1: ${area1}`); // Output: Area1: 50
+    console.log(`Area2: ${area2}`); // Output: Area2:
+    // refactoring
+    console.log(findUserByName([{ name: "John" }, { name: "Doe" }], "John"));
 }
 
 main();
