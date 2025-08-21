@@ -20,3 +20,9 @@ yarn-error.log
 *.pid
 *.seed
 *.pid.lock
+src/core_principles/angular/dist
+src/core_principles/angular/node_modules
+src/core_principles/angular/.vscode
+src/core_principles/angular/.idea
+src/core_principles/angular/.DS_Store
+src/core_principles/angular/README.md
