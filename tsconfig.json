@@ -19,6 +19,7 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "types": ["vitest", "node"],
+    "jsx": "react"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "./dist/**/*"]
