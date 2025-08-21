@@ -1,14 +1,15 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES2020",
     "useDefineForClassFields": true,
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "node",
-    "lib": ["es2018", "dom"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "outDir": "dist",
     "moduleDetection": "force",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -19,7 +20,7 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "types": ["vitest", "node"],
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "./dist/**/*"]

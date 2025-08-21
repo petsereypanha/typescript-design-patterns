@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es5", // Adjust target ES version if needed
+    "module": "commonjs", // Adjust module type if needed
+    "sourceMap": true, // Enable source maps for debugging (optional)
+    "strict": true, // Enable strict mode for type safety (optional)
+    "outDir": "./dist" // Output compiled JS files in the same directory
+  },
+  "include": ["./index.ts"]
+}
